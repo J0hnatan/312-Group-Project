@@ -11,7 +11,7 @@
 
 
 <body>
-    <img>
+    <?php echo Asset::img('cyberlock.jpeg', array('class' => 'image', 'width' => '200px')); ?>
     <h1><!--fictitious company name--></h1>
     <nav>
         <ul>
