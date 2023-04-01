@@ -1,13 +1,14 @@
-<h1>
+<h2>
     Identify, Protect, Detect, Respond, Recover
-</h1>
+</h2>
 
-<body>
-    <h2>
+<br>
+
+<div>
+    <h3>
         No matter what happens, SecureYou is here for you
-    </h2>
+    </h3>
     <p>
         We are a young up and coming business from the Fort Collins community who cares about your digital safety
     </p>
-    <!--Image here-->
-</body>
+</div>
