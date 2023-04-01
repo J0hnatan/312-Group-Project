@@ -4,11 +4,11 @@
 
 <br>
 
-<div>
+<main>
     <h3>
         No matter what happens, SecureYou is here for you
     </h3>
     <p>
         We are a young up and coming business from the Fort Collins community who cares about your digital safety
     </p>
-</div>
+</main>
