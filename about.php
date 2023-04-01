@@ -1,27 +1,30 @@
-<h1>
+<h2>
     About the Team
-</h1>
+</h2>
 
-<body>
-    <h2>
+<br>
+
+<main>
+    <h3>
         Nate
-    </h2>
+    </h3>
     <!--Image here-->
     <p>
-        Nate likes protecting our clients digital footprint and the movie "The sixth Sense" featuring the great Bruce Willis. 
+        Nate likes protecting our clients digital footprint and the movie "The Sixth Sense" featuring the great Bruce Willis. 
     </p>
-    <h2>
+    <h3>
         Charli
-    </h2>
+    </h3>
     <!--Image here-->
     <p>
         Charli enjoys long walks on the beach and smooth jazz. When Charli isn't saving the world on her computer, she's prolly climbing Mt. Everest.
     </p>
-    <h2>
+    <h3>
         Jonathan
-    </h2>
+    </h3>
     <!--Image here-->
     <p>
         Jonathan is 6'7" and benches 4 plates, he's as good at security on the computer as off of it.
-</body>
+    </p>
+</main>
 
