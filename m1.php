@@ -39,4 +39,16 @@ class Controller_M1 extends Controller_Template
 			
 		}
 	}
+	public function action_print()
+	{
+		$data['title'] = "Print View";
+		if(isset($_GET['rows_cols']) && isset($_GET['selected'])){
+			$data['rows_cols'] = $_GET['rows_cols'];
+			$data['selected'] = $_GET['selected'];
+			return new Response(View::forge('m1/print.php', $data));
+		}
+		else{
+			throw new HttpNotFoundException;
+		}
+	}
 }
