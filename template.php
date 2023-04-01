@@ -12,7 +12,7 @@
 
 <body>
     <?php echo Asset::img('cyberlock.jpeg', array('class' => 'image', 'width' => '200px')); ?>
-    <h1><!--fictitious company name--></h1>
+    <h1>Secure You</h1>
     <nav>
         <ul>
             <a href="https://cs.colostate.edu:4444/~jibarra1/m1/index/m1/index">Home</a>
