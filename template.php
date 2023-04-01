@@ -11,8 +11,11 @@
 
 
 <body>
-    <?php echo Asset::img('cyberlock.jpeg', array('class' => 'image', 'width' => '200px')); ?>
+    <div id="banner">
+    <?php echo Asset::img('cyberlock.jpeg', array('class' => 'image', 'width' => '200px', 'id' => 'icon')); ?>
     <h1>Secure You</h1>
+    </div>
+    <br>
     <nav>
         <ul>
             <a href="https://cs.colostate.edu:4444/~jibarra1/m1/index/m1/index">Home</a>
