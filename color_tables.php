@@ -10,7 +10,7 @@
             echo "<td style='width: 20%'>";
             echo "<select>";        
             echo "<option value='Default'>$color_array[$i]</option>";
-            for($j = 0; $j < $table; $j++){
+            for($j = 0; $j < 10; $j++){
                 if ($color_array[$i] == $color_array[$j]){
                     continue;
                 }
