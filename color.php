@@ -9,4 +9,9 @@
         <br>
         <input type="submit">
     </form>
+    <?php
+        if($invalid){
+            echo "<p style=\"background-color:lightcoral;border-radius:8px;padding:5px;\">ERROR: Invalid inputs from Rows/Columns or Colors.</p>";
+        }
+    ?>
 </div>

@@ -30,11 +30,17 @@ class Controller_M1 extends Controller_Template
 		$this->template->title = 'Color Page';
 		$this->template->css = "style.css";
 		if(isset($_GET['rows_cols']) && isset($_GET['colors'])){
-			$this->template->rows_cols = $_GET['rows_cols'];
-			$this->template->colors = $_GET['colors'];
-			$this->template->content = View::forge('m1/color_tables.php', $data);
+			if($_GET['rows_cols'] <=26 && $_GET['colors'] <=10){
+				$this->template->rows_cols = $_GET['rows_cols'];
+				$this->template->colors = $_GET['colors'];
+				$this->template->content = View::forge('m1/color_tables.php', $data);
+			}else{
+				$data['invalid'] = TRUE;
+				$this->template->content = View::forge('m1/color.php', $data);
+			}
 		}
 		else{
+			$data['invalid'] = FALSE;
 			$this->template->content = View::forge('m1/color.php', $data);
 			
 		}
