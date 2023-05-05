@@ -26,5 +26,12 @@
         Jonathan is 6'7" and benches 4 plates, he's as good at security on the computer as off of it.
     </div>
     </span>
+    <span class="bio">
+    <?php echo Asset::img('ryan.jpg', array('class' => 'image', 'width' => '200px')); ?>
+    <div class="side">
+        <h3>Ryan</h3>
+        Ryan loves eating grocery store shrimp cocktail when he is solving world problems on his computer
+    </div>
+    </span>
 </main>
 
