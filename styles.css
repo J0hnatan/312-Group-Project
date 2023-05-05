@@ -81,3 +81,35 @@ h1 {
   padding: 5px;
   padding-left: 10px;
 }
+
+/*color tables css*/
+#top-table{
+  width:100%;
+}
+.top-table-row{
+  height: 100%;
+}
+.top-table-coords{
+  border: 1px solid;
+  width: 80%;
+}
+.top-table-select select{
+  width: 100%;
+  height: 30px;
+}
+.radio-button{
+  cursor: pointer;
+}
+#bottom-table{
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+#bottom-table td{
+  min-width: 25px;
+  text-align: center;
+}
+.bottom-table-cell{
+  border: 1px solid;
+  cursor: cell;
+}
