@@ -4,7 +4,11 @@
 
 <table id="topTable">
     <?php
-        $color_array = array("Red", "Orange", "Yellow", "Green", "Teal", "Blue", "Purple", "Grey", "Brown", "Black");
+        //Assets
+        echo Asset::js('colorPicker.js');
+        echo Asset::css('colors.css');
+
+       $color_array = array("Red", "Orange", "Yellow", "Green", "Teal", "Blue", "Purple", "Grey", "Brown", "Black");
         $selected = array();
         $table= $_GET['colors'];
         $count = 0;
@@ -12,7 +16,8 @@
         for($i = 0; $i < $table; $i++){
             echo "<tr>";
             array_push($selected, $color_array[$i]);
-            echo "<td style='width: 20%'>";
+            echo "<td class='top-table-check' ><input type='radio' name='colors' id='color#$i' class='radio-button'></td>";
+            echo "<td class='top-table-select'>";
             echo "<select id='color$i' name='color$i'>";
             echo "<option value='$color_array[$i]'>$color_array[$i]</option>";
             for($j = 0; $j < $table; $j++){
@@ -20,22 +25,21 @@
                     continue;
                 }
                 else{
-                    echo "<option value='color'>$color_array[$j]</option>";
+                    echo "<option value='$color_array[$j]'>$color_array[$j]</option>";
                 }
             }
             echo "</select>";
             echo "</td>";
-            echo "<td style='width: 80%'></td>";
+            echo "<td class='top-table-coords'></td>";
             echo "</tr>";
         }
         echo "</table>";
 
 echo "</table>";
 
-echo "<table id='bottomTable'>";
         $letters = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
         $count = 1;
-        echo "<table style='width: 100%'>";
+        echo "<table id='bottom_table'>";
         $num = $_GET['rows_cols'];
         echo "<tr>";
         echo "<td></td>";
@@ -46,19 +50,17 @@ echo "<table id='bottomTable'>";
         for($i = 0; $i < $num; $i++){
             echo "<tr>";
             echo "<td>$count</td";
-            for($j = 0; $j < $num - 1; $j++){
-                echo "<td></td>";
+            for($z = 0; $z < $num; $z++){
+                echo "<td id='$letters[$z]$count' class='bottom-table-cell'></td>";
             }
-            echo "<td>$count[$i]</td>";
             $count++;
             echo "</tr>";
         }
         echo "</table>";
 
-echo "</table>";
 
 echo "<input type='submit' value='Print View' name='print_view' id='print_view' onclick='action_print()'>";
-echo "<p id='here'>test</p>";
+echo "<p id='here'></p>";
 
 echo "</form>";
 
